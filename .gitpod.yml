@@ -10,6 +10,7 @@ tasks:
       python -m pip install --upgrade pip
       python -m pip install --upgrade wheel
       python -m pip install --upgrade cmake matplotlib==3.2.2 numpy yt
+  command: cp -r /workspace/ecp-tutorials/.jupyter /home/gitpod/
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
