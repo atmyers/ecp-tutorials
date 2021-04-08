@@ -1,8 +1,7 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
 image: gitpod/workspace-full
 tasks:
-  - init: install dependencies
-    command: |
+  - init: |
       set -eu -o pipefail
 
       sudo apt-get update
