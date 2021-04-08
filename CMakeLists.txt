@@ -11,6 +11,7 @@ set( CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake )
 
 set(AMReX_PARTICLES      ON)
 set(AMReX_EB             ON)
+set(AMReX_FORTRAN       OFF)
 
 #
 # Fetch amrex repo
