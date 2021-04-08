@@ -3,7 +3,7 @@ if (AMReX_SPACEDIM EQUAL 1)
 endif ()
 
 # List of source files
-set(_sources EB_cylinder.cpp  FluidParticleContainer.cpp  FluidParticleContainer.H)
+set(_sources EB_Cylinder.cpp  FluidParticleContainer.cpp  FluidParticleContainer.H)
 list(APPEND _sources DefineVelocity.cpp  face_velocity.H  main.cpp  Indexing.H)
 list(APPEND _sources mac_project_velocity.cpp)
 
