@@ -1,5 +1,5 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: gitpod/workspace-full
+image: gitpod/workspace-full-vnc
 tasks:
 - init: /workspace/ecp-tutorials/dependencies.sh
   command: cp -r /workspace/ecp-tutorials/.jupyter /home/gitpod/
