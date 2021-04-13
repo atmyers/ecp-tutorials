@@ -31,7 +31,7 @@ def generate_movie_3D(AllPlotFiles):
     layout1 = GetLayout()
 
     # show data in view
-    ebpvtpDisplay = Show(ebpvtp, renderView1, 'GeometryRepresentation')
+    ebpvtpDisplay = Show(ebpvtp, renderView1)
 
     # trace defaults for the display properties.
     ebpvtpDisplay.Representation = 'Surface'
@@ -67,7 +67,7 @@ def generate_movie_3D(AllPlotFiles):
     plt00000.CellArrayStatus = ['proc', 'vfrac']
 
     # show data in view
-    plt00000Display = Show(plt00000, renderView1, 'AMRRepresentation')
+    plt00000Display = Show(plt00000, renderView1)
 
     # trace defaults for the display properties.
     plt00000Display.Representation = 'Outline'
@@ -93,14 +93,14 @@ def generate_movie_3D(AllPlotFiles):
     # create a new 'Slice'
     slice1 = Slice(Input=plt00000)
     slice1.SliceType = 'Plane'
-    slice1.HyperTreeGridSlicer = 'Plane'
+    #slice1.HyperTreeGridSlicer = 'Plane'
     slice1.SliceOffsetValues = [0.0]
 
     # init the 'Plane' selected for 'SliceType'
     slice1.SliceType.Origin = [0.625, 1.0, 0.25]
 
     # init the 'Plane' selected for 'HyperTreeGridSlicer'
-    slice1.HyperTreeGridSlicer.Origin = [0.625, 1.0, 0.25]
+#    slice1.HyperTreeGridSlicer.Origin = [0.625, 1.0, 0.25]
 
     # toggle 3D widget visibility (only when running from the GUI)
     Hide3DWidgets(proxy=slice1.SliceType)
@@ -109,7 +109,7 @@ def generate_movie_3D(AllPlotFiles):
     slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 
     # show data in view
-    slice1Display = Show(slice1, renderView1, 'GeometryRepresentation')
+    slice1Display = Show(slice1, renderView1)
 
     # trace defaults for the display properties.
     slice1Display.Representation = 'Surface'
@@ -166,7 +166,7 @@ def generate_movie_3D(AllPlotFiles):
     animationScene1.UpdateAnimationUsingDataTimeSteps()
 
     # show data in view
-    plt0Display = Show(plt0, renderView1, 'GeometryRepresentation')
+    plt0Display = Show(plt0, renderView1)
 
     # trace defaults for the display properties.
     plt0Display.Representation = 'Surface'
@@ -212,7 +212,7 @@ def generate_movie_3D(AllPlotFiles):
     glyph1.GlyphMode = 'All Points'
 
     # show data in view
-    glyph1Display = Show(glyph1, renderView1, 'GeometryRepresentation')
+    glyph1Display = Show(glyph1, renderView1)
 
     # trace defaults for the display properties.
     glyph1Display.Representation = 'Surface'
