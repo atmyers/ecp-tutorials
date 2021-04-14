@@ -7,9 +7,14 @@ sudo apt-get install -y --no-install-recommends\
     build-essential \
     g++             \
     libopenmpi-dev  \
-    openmpi-bin
-sudo apt-get install -y paraview python3-paraview ffmpeg
-sudo apt-get install -y python3 python3-pip python3-setuptools
+    openmpi-bin     \
+    paraview        \
+    python3-paraview \
+    ffmpeg \
+    python3 \
+    python3-pip \
+    python3-setuptools
+
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
 sudo update-alternatives --set python /usr/bin/python3
 python -m pip install --upgrade pip
