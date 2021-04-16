@@ -6,7 +6,7 @@ endif ()
 set(_sources main.cpp  MyParticleContainer.cpp  MyParticleContainer.H)
 
 # List of input files
-set(_input_files inputs_3d initial_particles_3d paraview_pachinko.py)
+set(_input_files inputs_3d initial_particles_3d paraview_pachinko.py Visualization.ipynb)
 
 setup_tutorial(_sources _input_files)
 
