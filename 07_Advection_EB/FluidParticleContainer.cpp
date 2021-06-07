@@ -100,7 +100,7 @@ FluidParticleContainer::AdvectWithUmac (MultiFab* umac, int lev, Real dt)
 
 
 	    umac_pointer[i] = raii_umac[i].get();
-	    umac_pointer[i]->copy(umac[i],0,0,umac[i].nComp(),ng,ng);
+	    umac_pointer[i]->ParallelCopy(umac[i],0,0,umac[i].nComp(),ng,ng);
         }
     }
 
