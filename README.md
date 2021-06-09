@@ -1,4 +1,4 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/atmyers/ecp-tutorials)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/atmyers/ecp-tutorials)
 
 This repository contains tutorials built using the AMReX adaptive
 mesh refinement framework, available at: https://github.com/AMReX-Codes/amrex/
