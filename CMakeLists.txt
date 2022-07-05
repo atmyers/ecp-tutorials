@@ -55,7 +55,7 @@ endif()
 #
 set( AMREX_TUTORIALS_SUBDIRS 01_HelloWorld 02_ParmParse
      03_HeatEquation 04_ParticleMesh 05_ParticleMesh_MultiLevel
-     06_Advection_Amr 07_Advection_EB 08_Pachinko)
+     06_Advection_Amr 08_Pachinko)
 
 list(TRANSFORM AMREX_TUTORIALS_SUBDIRS PREPEND "${CMAKE_CURRENT_LIST_DIR}/")
 
